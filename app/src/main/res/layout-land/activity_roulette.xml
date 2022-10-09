@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.RouletteActivity"
+    android:background="@color/first_color_dart">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <!--<include layout="@layout/content_main"/>-->
+        <RelativeLayout
+            android:id="@+id/content_main"
+            android:layout_width="420dp"
+            android:layout_height="wrap_content"
+            android:background="@color/first_color_dart" >
+
+            <ImageView
+                android:id="@+id/imageHill"
+                android:src="@drawable/hill"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true" />
+
+            <RelativeLayout
+                android:id="@+id/content_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="47dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/first_color_dart" >
+
+                <ImageView
+                    android:id="@+id/imageWheel"
+                    android:src="@drawable/wheel"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="center"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:id="@+id/powerButton"
+                    android:src="@drawable/spin_button"
+                    android:layout_centerInParent="true"
+                    android:scaleType="center"
+                    android:adjustViewBounds="false"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imageCircle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:adjustViewBounds="false"
+                android:scaleType="center"
+                android:layout_marginTop="45dp"
+                android:src="@drawable/circle" />
+
+            <ImageView
+                android:id="@+id/imagePointer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/imageCircle"
+                android:layout_alignBottom="@+id/imageHill"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="-15dp"
+                android:src="@drawable/pointer" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/infoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/content_main"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="-292dp"
+            android:text="@string/counter"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+</ScrollView>
